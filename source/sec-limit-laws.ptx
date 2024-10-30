@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-limit-laws" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Limit Laws</title>
+    <statement>
+        <p>
+            Suppose <m>c</m> is a constant and the following limits exist:
+            <me> 
+                \lim_{x \to a} f(x) \qquad \text{and} \qquad \lim_{x \to a} g(x)
+            </me>
+        </p>
+    </statement>
+    <p>
+        <ol>
+            <li>
+                <term>Sum Law</term>: The limit of a sum is the sum of the limits.
+                <me>
+                \lim_{x \to a}[f(x) + g(x)] = \lim_{x \to a}f(x) + \lim_{x \to a}g(x)
+                </me>
+            </li>
+            <li>
+                <term>Difference Law</term>: The limit of a difference is the difference of the limits.
+                <me>
+                \lim_{x \to a}[f(x) - g(x)] = \lim_{x \to a}f(x) - \lim_{x \to a}g(x)
+                </me>
+            </li>
+            <li>
+                <term>Constant Multiple Law</term>: The limit of a constant times a function is the constant times the limit of the function.
+                <me>
+                \lim_{x \to a}[cf(x)] = c\lim_{x \to a}f(x)
+                </me>
+            </li>
+            <li>
+                <term>Product Law</term>: The limit of a product is the product of the limits.
+                <me>
+                \lim_{x \to a}[f(x)g(x)] = \lim_{x \to a}f(x) * \lim_{x \to a}g(x)
+                </me>
+            </li>
+            <li>
+                <term>Quotient Law</term>: The limit of a quotient is the quotient of the limits (if the limit of the denominator is not 0).
+                <me>
+                \lim_{x \to a}\frac{f(x)}{g(x)} = \frac{\lim_{x \to a}f(x)}{\lim_{x \to a}g(x)} \qquad
+                \text{if} \space \lim_{x \to a}g(x) \neq 0
+                </me>
+            </li>
+            <li>
+                <term>Power Law</term>: Limits can move in/out of exponentials.
+                <me>
+                \lim_{x \to a}[f(x)]^n = [\lim_{x \to a}f(x)]^n \qquad 
+                \text{where } n \text{ is a positive integer}
+                </me>
+            </li>
+            <li>
+                <term>Root Law</term>: Limits can move in/out of roots.
+                <me>
+                \lim_{x \to a}\sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to a}f(x)} \qquad 
+                \text{where } n \text{ is a positive integer}
+                </me>
+            </li>
+        </ol>
+    </p>
+</section>

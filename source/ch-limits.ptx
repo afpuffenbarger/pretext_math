@@ -8,6 +8,7 @@
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-limit-laws-defs.ptx" />
+  <xi:include href="sec-limit-definitions.ptx" />
+  <xi:include href="sec-limit-laws.ptx" />
 
 </chapter>

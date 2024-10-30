@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-limit-definitions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limit Definitions</title>
+  <p>
+  <statement>
+    <p>
+      Let <m>f</m> be a function defined on an open interval that contains the real number <m>a</m> except possibly at <m>a</m> itself.
+    </p>
+  </statement>
+    <ol>
+      <li>
+        <p>
+          <term>Limit (two-sided)</term>
+          <me>
+            \lim_{x \to a}f(x) = L
+            \quad \text{i.e., the limit as } x \text{ approaches } a \text{ of } f(x) \text{ is } L
+          </me>
+          if <m>\forall \epsilon \gt 0, \space \exists \delta \gt 0 \space \text{s.t.}</m>
+          <me>
+            \text{(a)} \quad 0 \lt |x - a| \lt \delta \implies |f(x) - L| \lt \epsilon
+          </me>
+          or equivalently
+          <me>
+            \text{(b)} \quad a - \delta \lt x \lt a + \delta \implies L - \epsilon \lt f(x) \lt L + \epsilon
+          </me>
+          <ol>
+            <li>
+              <p>
+                i.e., the distance between <m>f(x)</m> and <m>L</m> can be made arbitrarily small 
+                if the distance from <m>x</m> to <m>a</m> is sufficently small.
+              </p>
+            </li>
+            <li>
+              <p>
+                i.e., for any <m>\epsilon \gt 0 </m> you choose, no matter how small it is, we can find <m>\delta \gt 0</m>
+                such that if <m>x</m> lies in the open interval <m>(a - \delta, a + \delta) \space \text{and} \space x \neq a</m>,
+                then <m>f(x)</m> lies in the open interval <m>(L - \epsilon, L + \epsilon)</m>. 
+              </p>
+            </li>
+          </ol>
+          Informally, the limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> equals the real number <m>L</m> if
+          the values of <m>f(x)</m> can be made as close to <m>L</m> as you want
+          by making <m>x</m> close enough to <m>a</m> on either side (greater than or less than but not exactly equal).
+          <p></p>
+          Imagine making a table of values of <m>x</m> and <m>f(x)</m> with values of <m>x</m> getting more precise 
+          (0.99, 0.999, 0.9999...) and (1.0001, 1.001, 1.01) for <m>a = 1</m>.
+          <p></p>
+          We don't even need <m>f(x)</m> to be defined at <m>a</m> (there could be an open hole in the graph).
+          We just need to examine the values of <m>f(x)</m> near it.
+          <p></p>
+          These definitions imply that regardless of the side of <m>a</m> you approach from on the real line,
+          there is a single common value that the values of <m>f(x)</m> appear to converge to. This is made more precise
+          via definitions for left and right hand limits.
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Left-Hand Limit</term>
+          <me>
+            \lim_{x \to a^-}f(x) = L
+          </me>
+          if <m>\forall \epsilon \gt 0, \space \exists \delta \gt 0</m> st.
+          <me>
+            a - \delta \lt x \lt a \implies |f(x) - L|
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Right-Hand Limit</term>
+          <me>
+            \lim_{x \to a^+}f(x) = L
+          </me>
+          if <m>\forall \epsilon \gt 0, \space \exists \delta \gt 0</m> st.
+          <me>
+            a \lt x \lt a + \delta \implies |f(x) - L|
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Infinite Limit</term>
+          <me>
+            \lim_{x \to a}f(x) = \infty
+          </me>
+          if <m>\forall M \gt 0, \space \exists \delta \gt 0</m> s.t.
+          <me>
+            0 \lt |x - a| \lt \delta \implies f(x) \gt M
+          </me>
+          and
+          <me>
+            \lim_{x \to a}f(x) = -\infty
+          </me>
+          if <m>\forall N \lt 0, \space \exists \delta \gt 0</m> s.t.
+          <me>
+            0 \lt |x - a| \lt \delta \implies f(x) \lt N
+          </me>                    
+        </p>
+      </li>
+    </ol>
+  </p>
+</section>
